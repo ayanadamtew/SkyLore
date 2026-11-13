@@ -19,6 +19,7 @@ coverage/
 .agents/
 .codex/
 .wrangler/
+.vercel/
 
 # Logs and OS files
 *.log
