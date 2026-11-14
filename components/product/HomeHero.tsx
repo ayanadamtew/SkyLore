@@ -1,6 +1,7 @@
 "use client";
 
 import { HeroSkyScene } from "@/components/astronomy/HeroSkyScene";
+import { GitHubMark } from "@/components/ui/GitHubMark";
 import Link from "next/link";
 import { ArrowDown, ArrowRight, Menu, MoonStar, Sparkles, Telescope, X } from "lucide-react";
 import { useState } from "react";
@@ -51,6 +52,16 @@ export function HomeHero() {
               <Telescope aria-hidden="true" />
               <span>Enter observatory</span>
             </Link>
+            <a
+              className="github-repository-link"
+              href="https://github.com/ayanadamtew/SkyLore"
+              target="_blank"
+              rel="noreferrer"
+              aria-label="View SkyLore on GitHub"
+              title="View SkyLore on GitHub"
+            >
+              <GitHubMark />
+            </a>
             <button
               className="home-menu-button"
               type="button"

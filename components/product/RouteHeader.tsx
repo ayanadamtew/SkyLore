@@ -1,3 +1,4 @@
+import { GitHubMark } from "@/components/ui/GitHubMark";
 import Link from "next/link";
 
 export function RouteHeader() {
@@ -8,7 +9,17 @@ export function RouteHeader() {
         <Link href="/">Tonight</Link>
         <Link href="/birth-sky">Birth sky</Link>
         <Link href="/create">Create</Link>
-        <Link href="/studio">Story studio</Link>
+        <Link className="route-studio-link" href="/studio">Story studio</Link>
+        <a
+          className="github-repository-link"
+          href="https://github.com/ayanadamtew/SkyLore"
+          target="_blank"
+          rel="noreferrer"
+          aria-label="View SkyLore on GitHub"
+          title="View SkyLore on GitHub"
+        >
+          <GitHubMark />
+        </a>
       </nav>
     </header>
   );

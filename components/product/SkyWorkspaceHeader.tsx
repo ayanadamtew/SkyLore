@@ -1,3 +1,4 @@
+import { GitHubMark } from "@/components/ui/GitHubMark";
 import { MoonStar } from "lucide-react";
 import Link from "next/link";
 import type { ReactNode } from "react";
@@ -21,7 +22,19 @@ export function SkyWorkspaceHeader({ active, children }: SkyWorkspaceHeaderProps
         <Link href="/create" data-active={active === "create"}>Create</Link>
       </nav>
 
-      <div className="sky-workspace-meta">{children}</div>
+      <div className="sky-workspace-meta">
+        {children}
+        <a
+          className="github-repository-link"
+          href="https://github.com/ayanadamtew/SkyLore"
+          target="_blank"
+          rel="noreferrer"
+          aria-label="View SkyLore on GitHub"
+          title="View SkyLore on GitHub"
+        >
+          <GitHubMark />
+        </a>
+      </div>
     </header>
   );
 }

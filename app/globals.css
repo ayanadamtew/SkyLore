@@ -2821,6 +2821,36 @@ textarea:focus-visible {
 
 .route-header nav a:hover { color: #e36e43; }
 
+.github-repository-link {
+  display: grid;
+  height: 35px;
+  width: 35px;
+  flex: 0 0 auto;
+  place-items: center;
+  border: 1px solid rgba(235, 230, 216, 0.22);
+  border-radius: 2px;
+  background: rgba(3, 7, 9, 0.5);
+  color: rgba(231, 225, 215, 0.72);
+  transition: border-color 160ms ease, background 160ms ease, color 160ms ease;
+}
+
+.github-repository-link svg {
+  height: 15px;
+  width: 15px;
+}
+
+.github-repository-link:hover {
+  border-color: rgba(227, 110, 67, 0.72);
+  background: rgba(227, 110, 67, 0.08);
+  color: #e36e43;
+}
+
+.route-header .github-repository-link {
+  height: 32px;
+  width: 32px;
+  margin-left: -6px;
+}
+
 .route-eyebrow {
   color: #7b807c;
   font-size: 9px;
@@ -3111,7 +3141,7 @@ textarea:focus-visible {
 @media (max-width: 620px) {
   .route-header { min-height: 58px; padding: 0 20px; }
   .route-header nav { gap: 12px; }
-  .route-header nav a:last-child { display: none; }
+  .route-header nav .route-studio-link { display: none; }
   .birth-copy,
   .studio-controls { padding: 48px 22px; }
   .birth-copy h1,
