@@ -2770,6 +2770,20 @@ textarea:focus-visible {
   color: #f2f0e8;
 }
 
+.skylore-mark {
+  display: block;
+  flex: 0 0 auto;
+  color: #e36e43;
+}
+
+.skylore-mark-moon {
+  fill: currentColor;
+}
+
+.skylore-mark-star {
+  fill: #f4f0e6;
+}
+
 .route-header {
   position: relative;
   z-index: 20;
@@ -2782,11 +2796,23 @@ textarea:focus-visible {
 }
 
 .route-brand {
+  display: inline-flex;
+  align-items: center;
+  gap: 9px;
   font-family: var(--font-display);
   font-size: 19px;
 }
 
-.route-brand span,
+.route-brand .skylore-mark {
+  height: 18px;
+  width: 18px;
+}
+
+.route-brand-word {
+  color: #f2f0e8;
+}
+
+.route-brand-word b,
 .studio-controls h1 span,
 .object-story-copy h1 span { color: #e36e43; }
 
@@ -3257,7 +3283,6 @@ textarea:focus-visible {
   height: 19px;
   width: 19px;
   color: #e36e43;
-  stroke-width: 1.35;
 }
 
 .home-nav-links {
@@ -3709,7 +3734,8 @@ textarea:focus-visible {
   }
 
   .home-brand svg {
-    display: none;
+    height: 17px;
+    width: 17px;
   }
 
   .home-observatory-link {
@@ -3911,7 +3937,6 @@ textarea:focus-visible {
   height: 15px;
   width: 15px;
   color: #e36e43;
-  stroke-width: 1.4;
 }
 
 .sky-workspace-modes {

@@ -1,10 +1,14 @@
 import { GitHubMark } from "@/components/ui/GitHubMark";
+import { SkyLoreMark } from "@/components/ui/SkyLoreMark";
 import Link from "next/link";
 
 export function RouteHeader() {
   return (
     <header className="route-header">
-      <Link className="route-brand" href="/">SkyLore<span>.</span></Link>
+      <Link className="route-brand" href="/" aria-label="SkyLore, home">
+        <SkyLoreMark />
+        <span className="route-brand-word">SkyLore<b>.</b></span>
+      </Link>
       <nav aria-label="Primary navigation">
         <Link href="/">Tonight</Link>
         <Link href="/birth-sky">Birth sky</Link>

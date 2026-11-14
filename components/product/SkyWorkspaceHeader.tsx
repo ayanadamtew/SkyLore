@@ -1,5 +1,5 @@
 import { GitHubMark } from "@/components/ui/GitHubMark";
-import { MoonStar } from "lucide-react";
+import { SkyLoreMark } from "@/components/ui/SkyLoreMark";
 import Link from "next/link";
 import type { ReactNode } from "react";
 
@@ -12,7 +12,7 @@ export function SkyWorkspaceHeader({ active, children }: SkyWorkspaceHeaderProps
   return (
     <header className="sky-workspace-header">
       <Link className="sky-workspace-brand" href="/" aria-label="SkyLore, home">
-        <MoonStar aria-hidden="true" />
+        <SkyLoreMark />
         <span>SkyLore</span>
       </Link>
 

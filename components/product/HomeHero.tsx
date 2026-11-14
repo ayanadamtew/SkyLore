@@ -2,8 +2,9 @@
 
 import { HeroSkyScene } from "@/components/astronomy/HeroSkyScene";
 import { GitHubMark } from "@/components/ui/GitHubMark";
+import { SkyLoreMark } from "@/components/ui/SkyLoreMark";
 import Link from "next/link";
-import { ArrowDown, ArrowRight, Menu, MoonStar, Sparkles, Telescope, X } from "lucide-react";
+import { ArrowDown, ArrowRight, Menu, Sparkles, Telescope, X } from "lucide-react";
 import { useState } from "react";
 
 const NAV_LINKS = [
@@ -35,7 +36,7 @@ export function HomeHero() {
 
         <header className="home-nav">
           <Link className="home-brand" href="/" aria-label="SkyLore, home">
-            <MoonStar aria-hidden="true" />
+            <SkyLoreMark />
             <span>SkyLore</span>
           </Link>
 
