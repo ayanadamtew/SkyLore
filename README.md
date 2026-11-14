@@ -33,6 +33,15 @@ SkyLore is an interactive astronomy experience built to make the sky feel less d
 
 The interface is designed for curiosity first: choose a place and moment, inspect what is above the horizon, open the story behind an object, or turn visible stars into something entirely your own.
 
+## Introducing SkyLore
+
+<div align="center">
+  <a href="./media/skylore-introduction.mp4">
+    <img src="./media/skylore-introduction-poster.jpg" alt="Watch the SkyLore introduction video" width="100%" />
+  </a>
+  <p><a href="./media/skylore-introduction.mp4"><strong>Watch the 41-second introduction</strong></a></p>
+</div>
+
 ## Experiences
 
 | Experience | What it does |

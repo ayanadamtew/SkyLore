@@ -3,6 +3,8 @@ node_modules/
 
 # Next.js and generated output
 .next/
+.vinext/
+.artifacts/
 out/
 dist/
 
